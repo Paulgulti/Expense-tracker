@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media (max-width: 600px){
+  .navigation h1{
+    font-size: 25px;
+  }
+  .navigation button{
+    font-size: 10px;
+  }
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aqua; */
+  /* border: 2px solid; */
+  padding: 10px 20px;
+}
+.navigation h1{
+  color: rgb(5, 155, 205)
+}
+.navigation h1:hover{
+  cursor: pointer;
+}
+.navigation button{
+  font-size: 15px;
+  padding: 5px 10px;
+  background-color: hsl(240, 74%, 56%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.navigation button:hover{
+  background-color:  hsl(240, 74%, 46%);
+}
+.totalbalance-view{
+  padding: 20px 70px;
+}
+.totalbalance-view p{
+  font-weight: bold;
+}
+.totalbalance-view span{
+  font-size: 10px;
+}
+.alltransaction-view{
+  display: flex;
+  gap: 20px;
+  padding: 50px 40px;
+}
+.all-income{
+  width: 50%;
+}
+.transaction-list{
+  display: flex;
+  justify-content: space-between;
+}
