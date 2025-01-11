@@ -57,7 +57,7 @@ const Modal = ({ handleToggleModalPopup }) => {
                     />
                     <div className='income-expense-select'>
                         <div>
-                            <label for="income">
+                            <label htmlFor="income">
                                 <input type='radio'
                                     id="income"
                                     name='income-expense'
@@ -70,7 +70,7 @@ const Modal = ({ handleToggleModalPopup }) => {
 
                         </div>
                         <div>
-                            <label for="expense">
+                            <label htmlFor="expense">
                                 <input type='radio'
                                     id="expense"
                                     name='income-expense'

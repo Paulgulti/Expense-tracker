@@ -3,18 +3,27 @@ import { ContextProvider } from './Context'
 import TransactionList from './TransactionList'
 import TotalTransaction from './TotalTransaction'
 import TotalBalance from './TotalBalance'
+import Chart from './Chart/Chart'
 
 const Home = () => {
     
     const { incomeTransaction, expenseTransaction } = useContext(ContextProvider)
-    // console.log(transaction)
+    // console.log(incomeTransaction)
 
     return (
         <div>
             <div className='totalbalance-view'>
-                <TotalBalance/>
-                <TotalTransaction transactionAmounts={incomeTransaction} description="Total Income"/>
-                <TotalTransaction transactionAmounts={expenseTransaction} description="Total Expense"/>
+                <div className='totalBalance'>
+                    <TotalBalance/>
+                    <TotalTransaction transactionAmounts={incomeTransaction} description="Total Income"/>
+                    <TotalTransaction transactionAmounts={expenseTransaction} description="Total Expense"/>
+                </div>
+                <div className='chart-container'>
+                    {incomeTransaction.length > 0 && <>
+                    <Chart/>
+                    <p className='chart-desc'>Total Transaction Visualization</p>
+                    </>}
+                </div>
             </div>
             <div className='alltransaction-view'>
                 <div className='all-income'>

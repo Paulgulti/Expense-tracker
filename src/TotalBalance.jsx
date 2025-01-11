@@ -4,10 +4,18 @@ import { ContextProvider } from './Context'
 const TotalBalance = () => {
 
     const { incomeTransaction, expenseTransaction } = useContext(ContextProvider)
-    const totalBalance = incomeTransaction.map(itr => parseFloat(itr.amount))
-        .reduce((acc, current) => { return acc + current }, 0) -
-        expenseTransaction.map(itr => parseFloat(itr.amount))
-            .reduce((acc, current) => { return acc + current }, 0)
+
+    const totalIncome = incomeTransaction.map(itr => parseFloat(itr.amount))
+        .reduce((acc, current) => { return acc + current }, 0)
+
+    const totalExpense = expenseTransaction.map(itr => parseFloat(itr.amount))
+        .reduce((acc, current) => { return acc + current }, 0)
+
+    const totalBalance = totalIncome - totalExpense
+    // const totalBalance = incomeTransaction.map(itr => parseFloat(itr.amount))
+    //     .reduce((acc, current) => { return acc + current }, 0) -
+    //     expenseTransaction.map(itr => parseFloat(itr.amount))
+    //         .reduce((acc, current) => { return acc + current }, 0)
     // console.log(totalBalance)
     return (
         <div>

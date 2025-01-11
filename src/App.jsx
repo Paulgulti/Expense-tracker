@@ -7,10 +7,10 @@ function App() {
 
   return (
     <>
-    <Context>
-      <Header/>
-      <Home/>
-    </Context>
+      <Context>
+        <Header />
+        <Home />
+      </Context>
     </>
   )
 }
