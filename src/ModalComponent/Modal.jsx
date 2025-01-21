@@ -10,10 +10,7 @@ const Modal = ({ handleToggleModalPopup }) => {
     } = useContext(ContextProvider)
 
     const [check, setCheck] = useState("income")
-    // console.log(check)
-    // console.log(incomeTransaction)
-    // console.log(expenseTransaction)
-
+    
     function addTransaction() {
         if (check === "income" && newTransactionDescription.trim().length > 0 && newTransactionAmount !== "" ) {
             setIncomeTransaction([...incomeTransaction, { id: crypto.randomUUID(), description: newTransactionDescription, amount: newTransactionAmount }])

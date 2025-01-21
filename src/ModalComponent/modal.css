@@ -1,14 +1,3 @@
-/* @media (max-width: 600px) {
-    .modal .modal-content{
-        width: 40%;
-    }
-    .modal-content .body h3 {
-        font-size: 15px;
-    }
-    .modal .modal-content .header h2{
-        font-size: 20px;
-    }
-} */
 
 .modal{
     position: fixed;
@@ -18,7 +7,6 @@
     background-color: hsla(0, 0%, 40%, 0.5);
     width: 100%;
     height: 100%;
-    /* border: 2px solid white; */
     padding-top: 100px;
 }
 .modal-content{
@@ -26,7 +14,6 @@
     position: relative;
     border-radius: 10px;
     box-shadow: 5px 5px 5px hsl(0, 0%, 15%);
-    /* border: 2px solid; */
     width: 30%;
     margin: auto;
     padding: 10px 10px;

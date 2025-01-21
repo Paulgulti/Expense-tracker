@@ -8,8 +8,7 @@ import Chart from './Chart/Chart'
 const Home = () => {
     
     const { incomeTransaction, expenseTransaction } = useContext(ContextProvider)
-    // console.log(incomeTransaction)
-
+    
     return (
         <div>
             <div className='totalbalance-view'>

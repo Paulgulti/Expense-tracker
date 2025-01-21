@@ -3,14 +3,7 @@ body{
   padding-top: 60px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-/* @media (max-width: 600px){
-  .navigation h1{
-    font-size: 25px;
-  }
-  .navigation button{
-    font-size: 10px;
-  }
-} */
+/* {NAVIGATION} */
 .navigation{
   display: flex;
   margin-left: auto;
@@ -18,8 +11,6 @@ body{
   justify-content: space-between;
   align-items: center;
   background-color: hsl(221, 100%, 21%);
-  /* border: 2px solid; */
-  /* padding: 10px 20px; */
   padding-left: 20px;
   position: fixed;
   top: 0;
@@ -45,14 +36,13 @@ body{
 .navigation button:hover{
   background-color: hsla(195, 95%, 41%, 0.727);
 }
-
+/* {MODAL} */
 .modal .modal-content{
   width: 350px;
 }
 
 .totalbalance-view{
   padding: 20px 70px;
-  /* border: 1px solid; */
   display: flex;
   align-items: center;
   gap: 50px;
@@ -64,9 +54,6 @@ body{
   .totalbalance-view, .alltransaction-view{
     max-width: 500px;
   }
-  /* .navigation{
-    max-width: 600px;
-  } */
   .modal .modal-content{
     max-width: 280px; 
   }
@@ -84,8 +71,6 @@ body{
     flex-direction: column;
     max-width: 420px;
     padding: 1em 1em;
-    /* padding-left: 1em;
-    padding-right: 1em; */
   }
   .cc .all-income{
     width: 100%;
@@ -96,9 +81,6 @@ body{
     max-width: 330px;
     padding:10px 10px;
   }
-  /* .navigation{
-    max-width: 400px;
-  } */
   .navigation button{
     padding: 3px 0px;
   }
@@ -132,7 +114,6 @@ body{
 
 }
 .balance-container{
-  /* border: 1px solid hsl(0, 0%, 20%); */
   background-color: hsl(0, 0%, 90%);
   box-shadow: 5px 5px 15px hsl(0, 0%, 79%);
   border-radius: 5px;
@@ -145,9 +126,7 @@ body{
 .chart-desc{
   text-align: center;
 }
-/* .chart-container{
-  max-width: 30%;
-} */
+
 .totalbalance-view p{
   font-weight: bold;
 }
@@ -155,10 +134,9 @@ body{
   font-size: 10px;
 }
 .alltransaction-view{
-  /* display: flex; */
+
   gap: 20px;
   padding: 1em 1em;
-  /* border: 1px solid; */
   width: 800px;
   margin-left: auto;
   margin-right: auto;

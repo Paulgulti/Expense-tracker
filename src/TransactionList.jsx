@@ -1,5 +1,4 @@
-import React, { useContext } from 'react'
-import { ContextProvider } from './Context'
+import React from 'react'
 
 const TransactionList = ({ transaction, title }) => {
 

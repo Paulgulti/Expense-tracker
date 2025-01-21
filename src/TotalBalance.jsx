@@ -12,11 +12,7 @@ const TotalBalance = () => {
         .reduce((acc, current) => { return acc + current }, 0)
 
     const totalBalance = totalIncome - totalExpense
-    // const totalBalance = incomeTransaction.map(itr => parseFloat(itr.amount))
-    //     .reduce((acc, current) => { return acc + current }, 0) -
-    //     expenseTransaction.map(itr => parseFloat(itr.amount))
-    //         .reduce((acc, current) => { return acc + current }, 0)
-    // console.log(totalBalance)
+
     return (
         <div className='total-balance'>
             <h3>Total Balance is $ {totalBalance}</h3>

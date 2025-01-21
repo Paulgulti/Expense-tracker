@@ -21,8 +21,6 @@ const Context = ({ children }) => {
       localStorage.setItem("expenseData", JSON.stringify(expenseTransaction))
     }, [expenseTransaction])
 
-
-
   return (
     <ContextProvider.Provider value={{  incomeTransaction, setIncomeTransaction, 
                                         newTransactionDescription, setNewTransactionDescription, 

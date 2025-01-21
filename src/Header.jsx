@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Modal from './Modal component/modal'
+import Modal from './ModalComponent/Modal.jsx'
 
 const Header = () => {
 
