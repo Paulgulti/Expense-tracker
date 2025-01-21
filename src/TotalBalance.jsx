@@ -18,7 +18,7 @@ const TotalBalance = () => {
     //         .reduce((acc, current) => { return acc + current }, 0)
     // console.log(totalBalance)
     return (
-        <div>
+        <div className='total-balance'>
             <h3>Total Balance is $ {totalBalance}</h3>
         </div>
     )

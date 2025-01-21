@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 
 export const ContextProvider = createContext()
 
@@ -7,6 +7,10 @@ const Context = ({ children }) => {
     const [expenseTransaction, setExpenseTransaction] = useState([])
     const [newTransactionDescription, setNewTransactionDescription] = useState("")
     const [newTransactionAmount, setNewTransactionAmount] = useState("")
+
+    // useEffect(()=>{
+    //   localStorage.setItem("incomeData", JSON.stringify(incomeTransaction))
+    // }, [incomeTransaction])
 
     // console.log(transaction)
 

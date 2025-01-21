@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <div>
             <div className='totalbalance-view'>
-                <div className='totalBalance'>
+                <div className='balance-container'>
                     <TotalBalance/>
                     <TotalTransaction transactionAmounts={incomeTransaction} description="Total Income"/>
                     <TotalTransaction transactionAmounts={expenseTransaction} description="Total Expense"/>
@@ -25,7 +25,7 @@ const Home = () => {
                     </>}
                 </div>
             </div>
-            <div className='alltransaction-view'>
+            <div className='alltransaction-view cc'>
                 <div className='all-income'>
                     <TransactionList transaction={incomeTransaction} title="Income"/>
                 </div>

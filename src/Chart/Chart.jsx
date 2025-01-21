@@ -22,7 +22,7 @@ const Chart = () => {
             {
                 label: "Amount in $",
                 data: [totalIncome, totalExpense],
-                backgroundColor: ["#00c04b", "#de0a26"],
+                backgroundColor: ["#43d143", "#de0a26"],
             }
         ]
     }
